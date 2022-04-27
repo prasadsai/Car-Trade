@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Trade</title>
+    <link rel="stylesheet" type="text/css" href="carTrading.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="mainHeader">
+        <a class="logo" href="index.html"><img src="CarTrageLogo.png" alt="TradeCars" height="50" width="50"></a> <b>Car
+            Trade</b>
+        <div id="userAccess">
+            <ul>
+                <li><a href="Trades.html">Trades</a></li>
+                <li><a href="newTrade.html">New Trade</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="nav_bar">
+        <a href="index.html">Home /</a>
+        <a href="#">New Trade</a>
+    </nav>
+
+    <br>
+    <br>
+    <form class="form-upload" action="trades.html">
+        <div class="form-group">
+            <label>Car Model</label>
+            <input type="text" class="form-control" placeholder="Model of your car">
+        </div>
+        <div class="form-group">
+            <label>Body type</label>
+            <input type="text" class="form-control" placeholder="Car body type">
+        </div>
+
+        <div class="form-group">
+            <label>Features</label>
+            <input type="text" class="form-control" placeholder="Car Features">
+        </div>
+
+        <div class="form-group">
+            <label>Years Used</label>
+            <input type="number" class="form-control" placeholder="Number of years">
+        </div>
+
+        <label>Location</label>
+        <div class="form-row">
+
+            <div class="col-7">
+                <input type="text" class="form-control" placeholder="City">
+            </div>
+            &nbsp;
+            <div class="col">
+                <input type="text" class="form-control" placeholder="State">
+            </div>
+            &nbsp;
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Zip">
+            </div>
+        </div>
+
+        <br>
+        <label>Car Image</label>
+
+        <div class="custom-file form-group">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Upload Image</label>
+        </div>
+        <br>
+        <br>
+        <div class="col-auto submit-car">
+            <button type="submit" class="btn btn-light mb-2">Submit</button>
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <footer class="main_footer">
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <!-- <div class="footer_social"> -->
+            <li class="footer_social"><a href="https://www.facebook.com"><img src="facebook.png" alt="facebook"
+                        height="30" width="30"></a>
+            </li>
+            <li class="footer_social"><a href="https://www.instagram.com/"><img src="instagram.png" alt="instagram"
+                        height="30" width="30"></a></li>
+            <li class="footer_social">
+                <p>Follow Us: </p>
+            </li>
+            <!-- </div> -->
+        </ul>
+        <p>© Designed and Developed by Sai Prasad Palli.</p>
+    </footer>
+</body>
+
+</html>
