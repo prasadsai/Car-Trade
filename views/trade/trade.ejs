@@ -1,0 +1,41 @@
+<%- include('../partials/header.ejs')%>
+<br>
+  <!-- cards -->
+  <div class="card mx-auto allWidth">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><%= trade.title%></li>
+    </ul>
+    <img class="card-img-top" src="/<%= trade.image%>" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= trade.class%></h5>
+      <p class="card-text"><%= trade.content%></p>
+      <h5>Trade your SUV today for <%= trade.title%> and make a statement!</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <h4>Features</h4>
+      </li>
+      <li class="list-group-item"><%= trade.feature1%></li>
+      <li class="list-group-item"><%= trade.feature2%></li>
+      <li class="list-group-item"><%= trade.feature3%></li>
+    </ul>
+    <div class="card-body">
+      <a href="/trades" class="card-link">Trade Now</a>
+      <a href="/trades" class="card-link">Rate It</a>
+      <!-- This is to edit delete -->
+      <br>
+      <br>
+      <form action="">
+        <button type="submit" formmethod="POST" formaction="/trades/<%= trade.id%>?_method=DELETE" class="btn btn-light mb-2 addDelete">Delete</button>
+        <button type="submit" formmethod="GET" formaction="/trades/<%= trade.id%>/edit" class="btn btn-light mb-2 addDelete">Edit</button>
+      </form>
+      <!-- <form action="">
+        <button type="submit" class="btn btn-light mb-2 addDelete">Delete</button>
+      </form> -->
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <%- include('../partials/footer.ejs')%>

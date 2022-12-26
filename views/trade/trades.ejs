@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs')%>
+    <br>
+    <br>
+    <%if(Btype.length){%>
+        <%Btype.forEach(type =>{%>
+            <div class="alert alert-primary mx-auto allWidth headingModel" role="alert">
+                <p><%=type%> - Trade your car for an awesome <%=type%>.</p>
+            </div>
+            <div class="alert alert mx-auto allWidth tradeLinks">
+                <%if(trades.length){%>
+                    <%trades.forEach(trade=>{%>
+                        <%if(trade.Btype === type){%>
+                            <a href="/trades/<%= trade.id%>"><p><%=trade.title%></p></a>
+                        <%}%> 
+                    <%});%>
+                <%} else{%>
+                    <p>No Trade avaliable.</p>
+                <%}%>
+            </div>
+        <%});%>
+    <%} else{ %>
+        <div class="alert alert-primary mx-auto allWidth" role="alert">
+            <p>No Trade avaliable.</p>
+        </div>
+    <%}%>
+    <br>
+    <br>
+    <%- include('../partials/footer.ejs')%>
