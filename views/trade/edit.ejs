@@ -4,22 +4,22 @@
 <form class="form-upload" action='/trades/<%= trade.id%>?_method=PUT' method = 'POST'>
     <div class="form-group">
         <label>Car Model</label>
-        <input type="text" name = "title" value = "<%= trade.title%>" class="form-control" placeholder="Model of your car">
+        <input type="text" name = "title" value = "<%= trade.title%>" class="form-control" placeholder="Model of your car" required>
     </div>
     <div class="form-group">
         <label>Body type</label>
-        <input type="text" name = "Btype" value = "<%= trade.Btype%>" class="form-control" placeholder="Car body type">
+        <input type="text" name = "Btype" value = "<%= trade.Btype%>" class="form-control" placeholder="Car body type" required>
     </div>
 
     <div class="form-group">
         <label>Car class</label>
-        <input type="text" name = "class" value = "<%= trade.class%>" class="form-control" placeholder="Car class">
+        <input type="text" name = "class" value = "<%= trade.class%>" class="form-control" placeholder="Car class" required>
     </div>
 
 
     <div class="form-group">
         <label>Car Image URL</label>
-        <input type="text" name = "image" value = "<%= trade.image%>" class="form-control" placeholder="Car image">
+        <input type="text" name = "image" value = "<%= trade.image%>" class="form-control" placeholder="Car image" required>
     </div>
     <!-- <label>Car Image URL</label> -->
     <!-- <div class="custom-file form-group">
@@ -29,17 +29,17 @@
 
     <div class="form-group">
         <label>Feature 1</label>
-        <input type="text" name = "feature1" value = "<%= trade.feature1%>" class="form-control" placeholder="Car Features">
+        <input type="text" name = "feature1" value = "<%= trade.feature1%>" class="form-control" placeholder="Car Features" required>
     </div>
 
     <div class="form-group">
         <label>Feature 2</label>
-        <input type="text" name = "feature2" value = "<%= trade.feature2%>" class="form-control" placeholder="Car Features">
+        <input type="text" name = "feature2" value = "<%= trade.feature2%>" class="form-control" placeholder="Car Features" required>
     </div>
 
     <div class="form-group">
         <label>Feature 3</label>
-        <input type="text" name = "feature3" value = "<%= trade.feature3%>" class="form-control" placeholder="Car Features">
+        <input type="text" name = "feature3" value = "<%= trade.feature3%>" class="form-control" placeholder="Car Features" required>
     </div>
 
     <!-- <label>Location</label>
@@ -62,7 +62,7 @@
     <div class="form-group">
         <!-- <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span> -->
         <div class="col-md-12">
-            <textarea class="form-control" name = "content" value = "<%= trade.content%>" id="message" name="message" placeholder="Please provide the full decription of your trade" rows="7"><%= trade.content%></textarea>
+            <textarea class="form-control" name = "content" value = "<%= trade.content%>" id="message" name="message" placeholder="Please provide the full decription of your trade" rows="7" required minlength="10"><%= trade.content%></textarea>
         </div>
     </div>
 

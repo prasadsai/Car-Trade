@@ -13,29 +13,29 @@
 
     <div class="form-group">
         <label>Car class</label>
-        <input type="text" name = "class" class="form-control" placeholder="Car class">
+        <input type="text" name = "class" class="form-control" placeholder="Car class" required>
     </div>
     <label>Car Image</label> 
 
     <div class="custom-file form-group">
         <input type="file" name = "image" class="custom-file-input" id="customFile">
-        <label class="custom-file-label" for="customFile">Upload Image</label>
+        <label class="custom-file-label" for="customFile" required>Upload Image</label>
     </div>
     <br>
     <br>    
     <div class="form-group">
         <label>Feature 1</label>
-        <input type="text" name = "feature1" class="form-control" placeholder="Car Features">
+        <input type="text" name = "feature1" class="form-control" placeholder="Car Features" required>
     </div>
 
     <div class="form-group">
         <label>Feature 2</label>
-        <input type="text" name = "feature2" class="form-control" placeholder="Car Features">
+        <input type="text" name = "feature2" class="form-control" placeholder="Car Features" required>
     </div>
 
     <div class="form-group">
         <label>Feature 3</label>
-        <input type="text" name = "feature3" class="form-control" placeholder="Car Features">
+        <input type="text" name = "feature3" class="form-control" placeholder="Car Features" required>
     </div>
 
     <!-- <label>Location</label>
@@ -58,7 +58,7 @@
     <div class="form-group">
         <!-- <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span> -->
         <div class="col-md-12">
-            <textarea class="form-control" name = "content" id="message" name="message" placeholder="Enter your vechile details here." rows="7"></textarea>
+            <textarea class="form-control" name = "content" id="message" name="message" placeholder="Enter your vechile details here." rows="7" required minlength="10"></textarea>
         </div>
     </div>
 

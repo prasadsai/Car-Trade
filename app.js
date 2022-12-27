@@ -2,6 +2,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
+const mongoose = require('mongoose');
 const mainRoutes = require('./routes/mainRoutes');
 const tradeRoutes = require('./routes/tradeRoutes');
 
@@ -19,7 +20,21 @@ app.use(express.urlencoded({extended: true}));
 app.use(morgan('tiny'));
 app.use(methodOverride('_method'));
 
+//connect to database
+mongoose.connect('mongodb://localhost:27017/trade', 
+                    {useNewUrlParser: true, useUnifiedTopology: true})
+.then(()=>{
+    //start the server
+    app.listen(port, host, ()=>{
+        console.log('Server is running on port', port);
+    });
+})
+.catch(err=>console.log(err.message));
+
+
+
 //set up routes
+
 // app.get('/',(req,res)=>{
 //     res.render('index');
 // });
@@ -39,6 +54,7 @@ app.use((req, res, next) =>{
 app.use((err, req, res, next)=>{
     if(!err.status){
         err.status = 500;
+        console.log(err.message);
         err.message = ("Internal Server Error");
     }
 
@@ -47,6 +63,6 @@ app.use((err, req, res, next)=>{
 });
 
 //start the server
-app.listen(port, host, ()=>{
-    console.log('Server is running on port', port);
-})
+// app.listen(port, host, ()=>{
+//     console.log('Server is running on port', port);
+// })
