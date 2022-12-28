@@ -164,9 +164,8 @@ const tradeSchema = new Schema({
     content: {type: String, required: [true, 'Car description is required'], minLength: [10, 'The description should be atleast 10 characters']},
     feature1: {type: String, required: [true, 'Car main feature is required']},
     feature2: {type: String, required: [true, 'Car secondary feature is required']},
-    feature3: {type: String, required: [true, 'Car third feature is required']}
-
-
+    feature3: {type: String, required: [true, 'Car third feature is required']},
+    author: {type: Schema.Types.ObjectId, ref:'User'},
 },
 {timestamps: true}
 );

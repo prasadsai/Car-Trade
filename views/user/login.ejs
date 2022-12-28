@@ -1,0 +1,62 @@
+<%- include('../partials/header.ejs')%>
+<!-- <div class = "content">
+    <form action = '/users/login' method = 'POST'>
+        <table>
+            <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="email" id="email" name="email" class = "form-control" placeholder="Email ID" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" class = "fixed-width" required></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" class = "align-right"><button>Login</button></td>
+            </tr>
+        </table>        
+    </form>
+</div> -->
+
+
+<br>
+<br>
+<br>
+<form class="form-upload" action='/users/login' method = 'POST'>
+
+    <div class="form-group">
+        <h5>Welcome to Car Trade</h5>
+        <!-- &nbsp; -->
+        <h6>Please enter your username and password to login.</h6>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" class = "form-control" placeholder="Email ID" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class = "form-control" placeholder="Password" required>
+    </div>
+
+    <div class="col-auto submit-car">
+        <button type="submit" class="btn btn-light mb-2">Submit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- <%- include('../partials/header.ejs')%>
+<br>
+    <form action="/users/login" method="POST">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <button>Login</button><br>
+    </form> -->
+<%- include('../partials/footer.ejs')%>

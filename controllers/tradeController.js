@@ -32,6 +32,7 @@ exports.create = (req,res, next)=>{
 
     
     let trade = new model(req.body);//create a new trade docunment
+    trade.author = req.session.user;
     trade.save()// insert to the DB
     .then(trade=>res.redirect('/trades'))
     .catch(err=>{
@@ -53,9 +54,10 @@ exports.show = (req, res, next)=>{
     }
 
 
-    model.findById(id)
+    model.findById(id).populate('author', 'firstName lastName')
     .then(trade=>{
         if(trade) {
+            console.log(trade);
             // trade.date = DateTime.fromSQL(trade.date).toFormat('LLLL dd, yyyy');
             return res.render('./trade/trade', {trade});
         } else {

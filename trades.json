@@ -1,0 +1,157 @@
+[{
+  "_id": {
+    "$oid": "6265df6dc9ac170b3f24f2a9"
+  },
+  "title": "Mercedes G Wagon",
+  "Btype": "SEDAN",
+  "class": "G-Class - a new type of DNA",
+  "image": "images/cards/benz.jpg",
+  "feature1": "Active Lane Keeping Assist",
+  "feature2": "Parking with 360 Camera",
+  "feature3": "Assistance Package",
+  "content": "The DNA of an off-road vehicle with its iconic and virtually indestructible body. a Design that speaks for itself, one of a kind with unique interiors. G-Wagon has redefined the SUV space with its unique design.",
+  "author": {
+    "$oid": "6265dcbfc9ac170b3f24f2a8"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1650843501933"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650843566193"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6265dff2c9ac170b3f24f2aa"
+  },
+  "title": "Mercedes S Class",
+  "Btype": "SEDAN",
+  "class": "S-Class - a new type of DNA",
+  "image": "images/cards/sclass.jpeg",
+  "feature1": "Passive Lane Keeping Assist",
+  "feature2": "Parking with 270 Camera",
+  "feature3": "Superior Package",
+  "content": "The Design that speaks for itself, one of a kind with unique interiors. the DNA of an off-road vehicle with its iconic and virtually indestructible body. G-Wagon has redefined the SUV space with its unique design.",
+  "author": {
+    "$oid": "6265dcbfc9ac170b3f24f2a8"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1650843634428"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650843634428"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6265e039c9ac170b3f24f2ab"
+  },
+  "title": "BMW X5",
+  "Btype": "SUV",
+  "class": "X5-Class - a new type of DNA",
+  "image": "images/cards/bmw.jpeg",
+  "feature1": "Passive Lane Keeping Assist",
+  "feature2": "Parking with 270 Camera",
+  "feature3": "Superior Package",
+  "content": "The Design that speaks for itself, one of a kind with unique interiors. the DNA of an off-road vehicle with its iconic and virtually indestructible body. G-Wagon has redefined the SUV space with its unique design.",
+  "author": {
+    "$oid": "6265dcbfc9ac170b3f24f2a8"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1650843705458"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650843705458"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6265e0afc9ac170b3f24f2ac"
+  },
+  "title": "BMW Z4",
+  "Btype": "SEDAN",
+  "class": "Z4-Class - a new type of DNA",
+  "image": "images/cards/bmw-z4.jpg",
+  "feature1": "Passive Lane Keeping Assist",
+  "feature2": "Parking with 270 Camera",
+  "feature3": "Superior Package",
+  "content": "The Design that speaks for itself, one of a kind with unique interiors. the DNA of an off-road vehicle with its iconic and virtually indestructible body. G-Wagon has redefined the SUV space with its unique design.",
+  "author": {
+    "$oid": "6265c9ef883e7e092b106e90"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1650843823156"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650843823156"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6265e119c9ac170b3f24f2ad"
+  },
+  "title": "Mercedes G550",
+  "Btype": "SUV",
+  "class": "G550-Class - a new type of DNA",
+  "image": "images/cards/benzG5.jpeg",
+  "feature1": "Active Lane Keeping Assist",
+  "feature2": "Parking with 360 Camera",
+  "feature3": "Assistance Package",
+  "content": "The DNA of an off-road vehicle with its iconic and virtually indestructible body. a Design that speaks for itself, one of a kind with unique interiors. G-Wagon has redefined the SUV space with its unique design.",
+  "author": {
+    "$oid": "6265c9ef883e7e092b106e90"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1650843929028"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650843929028"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6265e16ac9ac170b3f24f2ae"
+  },
+  "title": "Mercedes G SUV",
+  "Btype": "SUV",
+  "class": "G-Class - a new type of DNA",
+  "image": "images/cards/benzG.jpeg",
+  "feature1": "Passive Lane Keeping Assist",
+  "feature2": "Parking with 270 Camera",
+  "feature3": "Superior Package",
+  "content": "The Design that speaks for itself, one of a kind with unique interiors. the DNA of an off-road vehicle with its iconic and virtually indestructible body. G-Wagon has redefined the SUV space with its unique design.",
+  "author": {
+    "$oid": "6265c9ef883e7e092b106e90"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1650844010457"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1650844010457"
+    }
+  },
+  "__v": 0
+}]

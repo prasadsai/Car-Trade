@@ -1,0 +1,51 @@
+
+<%- include('../partials/header.ejs')%>
+<br>
+<br>
+<div class = "alert alert-primary mx-auto allWidth headingModel" role="alert">
+    <h2>Welcome, <%=user.firstName%></h2>
+    <p>You have created the following car trades</p>
+    <!-- <%if(trades.length){%>
+        <p>You have created the following car trades</p>
+        <%trades.forEach(trade => {%>
+            <div class="alert alert mx-auto allWidth tradeLinks">
+                <a href = '/trades/<%=trade.id%>'><p><%=trade.title%></p></a>
+            </div>
+            
+        <%});
+    } else{%>
+        <p>You have not created any trades</p>
+    <%}%> -->
+    <div class="card text-primary mb-3">
+        
+        <% if(trades.length){ %>
+            <table>
+                <br>
+                <tr>
+                  <th>Trade</th>
+                  <th>Btype</th>
+                  <th>Action</th>
+                </tr>
+                <% trades.forEach(trade => { %>
+                <tr>
+                    <td><%= trade.title %></td>
+                    <td><%= trade.Btype %></td>
+                    <td>
+                        <form action="">
+                            <button type="submit" formmethod="GET" formaction="/trades/<%= trade.id%>/edit" class="btn btn-primary mb-2">Edit</button>
+                            <button type="submit" formmethod="POST" formaction="/trades/<%= trade.id%>?_method=DELETE" class="btn btn-primary mb-2">Delete</button>
+                          </form>
+                    </td>
+                    
+                </tr>
+                
+                <% }); %>
+            </table>
+            <% } else { %>
+                <p style="margin: 20px auto;width: 95%;">There are no trades to display.</p>
+            <% } %>
+
+    </div>
+
+    </div>
+    <%- include('../partials/footer.ejs')%>

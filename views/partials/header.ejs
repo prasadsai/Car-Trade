@@ -15,9 +15,16 @@
         <div id="userAccess">
             <ul>
                 <li><a href="/trades">Trades</a></li>
-                <li><a href="/trades/newTrade">New Trade</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
+                <%if(!user) {%>
+                    <li><a href="/users/login">Login</a></li>
+                    <li><a href="/users/new">Signup</a></li>
+                <%} else {%>
+                    <li><a href="/trades/newTrade">New Trade</a></li>
+                    <li><a href="/users/profile">Profile</a></li>
+                    <li><a href="/users/logout">Logout</a></li>
+                <%}%>
+                
+
             </ul>
         </div>
     </header>
@@ -25,3 +32,15 @@
     <nav class="nav_bar">
         <a class="first_a_nav" href="/">Home</a>
     </nav>
+
+    <%if(errorMessages.length > 0){
+        errorMessages.forEach(message=>{%>
+            <div class = 'error'><%=message%></div>
+        <%});
+    }%>
+
+    <%if(successMessages.length > 0){
+        successMessages.forEach(message=>{%>
+            <div class = 'success'><%=message%></div>
+        <%});
+    }%>
